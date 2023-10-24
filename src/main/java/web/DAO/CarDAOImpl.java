@@ -7,9 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class CarDAOImpl implements CarDAO{private final List<Car> carList;
+public class CarDAOImpl implements CarDAO {
+    private final List<Car> carList;
 
-    public CarDAOImpl() {
+    {
 
         carList = new ArrayList<>();
         carList.add(new Car("Toyota", "Camry", 2020));
@@ -23,5 +24,7 @@ public class CarDAOImpl implements CarDAO{private final List<Car> carList;
     public List<Car> getAllCars() {
         return carList;
     }
+
+
 
 }

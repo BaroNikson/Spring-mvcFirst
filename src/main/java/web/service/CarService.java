@@ -8,10 +8,9 @@ import web.model.Car;
 import java.util.List;
 
 @Service
-public class CarService {
+public class CarService implements CarServiceImpl {
     private final CarDAO carDAO;
 
-   
     public CarService(CarDAO carDAO) {
         this.carDAO = carDAO;
     }
