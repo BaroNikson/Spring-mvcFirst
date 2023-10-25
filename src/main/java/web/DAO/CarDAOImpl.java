@@ -2,13 +2,13 @@ package web.DAO;
 
 import org.springframework.stereotype.Repository;
 import web.model.Car;
-import web.service.CarService;
+
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class CarDAOImpl implements CarService {
+public class CarDAOImpl implements CarDAO {
     private final List<Car> carList;
 
     {
